@@ -1,0 +1,15 @@
+PODS:
+  - CryptoSwift (0.6.7)
+  - Validator (2.1.1)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - Validator
+
+SPEC CHECKSUMS:
+  CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
+  Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
+
+PODFILE CHECKSUM: 24f978bd895c8b08f062aeb93fbf338051c82833
+
+COCOAPODS: 1.1.1
