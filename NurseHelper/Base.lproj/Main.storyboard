@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SC1-yw-aIy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Patients-->
+        <scene sceneID="DRc-DM-0OC">
+            <objects>
+                <viewController id="jmF-4G-SIr" customClass="PatientsTabViewController" customModule="NurseHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vqu-cP-apc"/>
+                        <viewControllerLayoutGuide type="bottom" id="98n-kZ-fWu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zHx-Yj-qnd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEQ-DB-IUd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <segue destination="LAe-sU-Kmg" kind="embed" identifier="PatientsTabEmbedPatientList" id="lUI-g0-L2Z"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fEQ-DB-IUd" secondAttribute="trailing" id="2Y4-4W-Pt7"/>
+                            <constraint firstItem="fEQ-DB-IUd" firstAttribute="leading" secondItem="zHx-Yj-qnd" secondAttribute="leading" id="cCD-5O-k8Y"/>
+                            <constraint firstItem="98n-kZ-fWu" firstAttribute="top" secondItem="fEQ-DB-IUd" secondAttribute="bottom" id="cc6-rB-6wS"/>
+                            <constraint firstItem="fEQ-DB-IUd" firstAttribute="top" secondItem="vqu-cP-apc" secondAttribute="bottom" id="l1C-8y-7gR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Patients" id="QbW-tH-YRi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="THO-5s-eRc">
+                            <connections>
+                                <action selector="showAddNewPatient:" destination="jmF-4G-SIr" id="RhY-DN-58X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="YSo-tz-hvz" kind="presentation" identifier="ShowAddPatients" id="2ZW-Cv-y02"/>
+                        <segue destination="Yf1-pu-2ue" kind="show" identifier="ShowPatientDetails" id="2fy-Ff-Z5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUs-UD-zqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111.1999999999998" y="158.77061469265368"/>
+        </scene>
+        <!--AddPatientViewController-->
+        <scene sceneID="W0Z-eB-Taj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Patients" referencedIdentifier="AddPatientViewController" id="YSo-tz-hvz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmk-eo-bUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760" y="-186"/>
+        </scene>
+        <!--PatientDetailsViewController-->
+        <scene sceneID="xqX-ZJ-e8U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Patients" referencedIdentifier="PatientDetailsViewController" id="Yf1-pu-2ue" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymE-Ro-i7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2769" y="122"/>
+        </scene>
+        <!--PatientsListViewController-->
+        <scene sceneID="Dmr-i4-Jfx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Patients" referencedIdentifier="PatientsListViewController" id="LAe-sU-Kmg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVf-gi-28E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2812" y="289"/>
+        </scene>
+        <!--AddMedicineViewController-->
+        <scene sceneID="yOJ-nD-cCY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Medicines" referencedIdentifier="AddMedicineViewController" id="ygm-jh-aNg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxQ-u3-HJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2547" y="572"/>
+        </scene>
+        <!--MedicineDetailsViewController-->
+        <scene sceneID="YvU-8L-zqg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Medicines" referencedIdentifier="MedicineDetailsViewController" id="xMB-1Q-z9U" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6J-um-hRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2565" y="800"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="shT-By-yqZ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Fhx-MJ-MeQ" customClass="ScheduleListViewController" customModule="NurseHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJ1-IC-4I8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xtf-R5-Zb2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gst-xP-5UY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N6N-yd-KGo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N6N-yd-KGo" firstAttribute="top" secondItem="fJ1-IC-4I8" secondAttribute="bottom" id="62T-Jg-ssu"/>
+                            <constraint firstItem="Xtf-R5-Zb2" firstAttribute="top" secondItem="N6N-yd-KGo" secondAttribute="bottom" id="Lgt-oV-qGc"/>
+                            <constraint firstAttribute="trailing" secondItem="N6N-yd-KGo" secondAttribute="trailing" id="NJ1-lm-lPg"/>
+                            <constraint firstItem="N6N-yd-KGo" firstAttribute="leading" secondItem="gst-xP-5UY" secondAttribute="leading" id="hll-3U-Oef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Schedule" id="TyK-so-0TK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3cI-7y-Uor">
+                            <connections>
+                                <action selector="addNewMedicine:" destination="Fhx-MJ-MeQ" id="RIa-ZB-YGZ"/>
+                                <segue destination="1QU-ct-16T" kind="presentation" id="1yk-eS-eDG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="N6N-yd-KGo" id="2SJ-HD-aJc"/>
+                        <segue destination="4Y0-UQ-XG7" kind="presentation" identifier="ShowAddScheduleItem" id="hlr-l0-5JM"/>
+                        <segue destination="2hX-uV-ECy" kind="show" identifier="ShowScheduleDetails" id="XE7-5l-cS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hnq-eH-cdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="-643.62818590704649"/>
+        </scene>
+        <!--ScheduleSelectPatientViewController-->
+        <scene sceneID="N7d-oN-KNf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" referencedIdentifier="ScheduleSelectPatientViewController" id="4Y0-UQ-XG7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N60-fG-cec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836" y="-926"/>
+        </scene>
+        <!--AddScheduleViewController-->
+        <scene sceneID="azY-Zh-Ych">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" referencedIdentifier="AddScheduleViewController" id="1QU-ct-16T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwq-zJ-Er8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="-836"/>
+        </scene>
+        <!--ScheduleDetailsViewController-->
+        <scene sceneID="gmm-A4-Ga2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" referencedIdentifier="ScheduleDetailsViewController" id="2hX-uV-ECy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKS-eR-NC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2845" y="-754"/>
+        </scene>
+        <!--Patients-->
+        <scene sceneID="xve-QW-WjL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D7w-WW-3t0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Patients" id="cN5-xW-6H1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fSP-Hq-9C1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jmF-4G-SIr" kind="relationship" relationship="rootViewController" id="omK-gc-WNR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99h-7x-6mS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="158.77061469265368"/>
+        </scene>
+        <!--Medicines-->
+        <scene sceneID="Vp6-pd-gZg">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="KQ1-Vc-4zy" customClass="MedicinesListViewController" customModule="NurseHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AV9-tV-UfQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZgR-JZ-AAK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qp6-6r-IYy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RZ1-cp-Mn2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KQ1-Vc-4zy" id="d0I-gv-7SQ"/>
+                                    <outlet property="delegate" destination="KQ1-Vc-4zy" id="IUi-UA-hIX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RZ1-cp-Mn2" firstAttribute="leading" secondItem="qp6-6r-IYy" secondAttribute="leading" id="ZDz-dq-jOg"/>
+                            <constraint firstItem="ZgR-JZ-AAK" firstAttribute="top" secondItem="RZ1-cp-Mn2" secondAttribute="bottom" id="cYJ-zv-qDk"/>
+                            <constraint firstItem="RZ1-cp-Mn2" firstAttribute="top" secondItem="AV9-tV-UfQ" secondAttribute="bottom" id="gqf-ny-bKj"/>
+                            <constraint firstAttribute="trailing" secondItem="RZ1-cp-Mn2" secondAttribute="trailing" id="jK1-h8-Zj3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Medicines" id="003-fU-h15">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RZX-rf-7b3">
+                            <connections>
+                                <action selector="addNewMedicine:" destination="KQ1-Vc-4zy" id="xp8-JD-YDq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="RZ1-cp-Mn2" id="kTZ-TY-JnR"/>
+                        <segue destination="ygm-jh-aNg" kind="presentation" identifier="ShowAddMedicine" id="mdR-0c-Fby"/>
+                        <segue destination="xMB-1Q-z9U" kind="show" id="IdD-Di-sZC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5X-Iz-Q3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="846.9265367316342"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0ZC-hc-iZT">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SC1-yw-aIy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bGp-aU-e76">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D7w-WW-3t0" kind="relationship" relationship="viewControllers" id="HAH-X4-zpL"/>
+                        <segue destination="jOy-tj-eNh" kind="relationship" relationship="viewControllers" id="EfS-P2-ZlA"/>
+                        <segue destination="xHC-SJ-dvU" kind="relationship" relationship="viewControllers" id="R2U-KR-En2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hp0-lZ-qG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="158.77061469265368"/>
+        </scene>
+        <!--Medicines-->
+        <scene sceneID="nhs-eb-RMq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jOy-tj-eNh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Medicines" id="Dzz-8E-3wz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m9N-XQ-OoI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KQ1-Vc-4zy" kind="relationship" relationship="rootViewController" id="9iE-Ut-w1u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogg-x4-dpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="1021"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="LuE-Qn-hR8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xHC-SJ-dvU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" id="Gc1-T2-mJf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fAN-qd-Iih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fhx-MJ-MeQ" kind="relationship" relationship="rootViewController" id="Jcs-xP-JfA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tsa-Ym-62G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216.8" y="-643.62818590704649"/>
+        </scene>
+    </scenes>
+</document>

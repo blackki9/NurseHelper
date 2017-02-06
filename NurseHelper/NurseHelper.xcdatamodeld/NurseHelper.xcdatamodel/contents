@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedMedicine" representedClassName="NurseHelper.ManagedMedicine" syncable="YES">
+        <attribute name="name" attributeType="String" minValueString="1" maxValueString="254" syncable="YES"/>
+    </entity>
+    <entity name="ManagedMedicineScheduleItem" representedClassName="NurseHelper.ManagedMedicineScheduleItem" syncable="YES">
+        <attribute name="dosage" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="priority" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="medicine" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedMedicine" syncable="YES"/>
+    </entity>
+    <entity name="ManagedNurse" representedClassName="NurseHelper.ManagedNurse" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" minValueString="1" maxValueString="254" syncable="YES"/>
+        <attribute name="password" attributeType="String" minValueString="1" syncable="YES"/>
+        <relationship name="patients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ManagedPatient" inverseName="nurse" inverseEntity="ManagedPatient" syncable="YES"/>
+    </entity>
+    <entity name="ManagedPatient" representedClassName="NurseHelper.ManagedPatient" syncable="YES">
+        <attribute name="email" attributeType="String" minValueString="1" maxValueString="254" syncable="YES"/>
+        <attribute name="fullName" attributeType="String" minValueString="1" maxValueString="128" syncable="YES"/>
+        <attribute name="phone" attributeType="String" minValueString="1" maxValueString="32" syncable="YES"/>
+        <relationship name="nurse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedNurse" inverseName="patients" inverseEntity="ManagedNurse" syncable="YES"/>
+        <relationship name="scheduleItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedMedicineScheduleItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ManagedMedicine" positionX="-3807" positionY="-1603" width="128" height="58"/>
+        <element name="ManagedMedicineScheduleItem" positionX="-3582" positionY="-1719" width="234" height="103"/>
+        <element name="ManagedNurse" positionX="-3888" positionY="-1782" width="128" height="88"/>
+        <element name="ManagedPatient" positionX="-3620" positionY="-1998" width="128" height="118"/>
+    </elements>
+</model>

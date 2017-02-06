@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Schedule View Controller-->
+        <scene sceneID="oM2-kL-xI3">
+            <objects>
+                <viewController storyboardIdentifier="AddScheduleViewController" id="kVd-UF-zjv" customClass="AddScheduleViewController" customModule="NurseHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="38h-Kb-1PY"/>
+                        <viewControllerLayoutGuide type="bottom" id="WJD-mX-6sO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j6f-fF-QhE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DzG-54-QUf">
+                                <rect key="frame" x="10" y="40" width="355" height="402.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ud8-Dp-Ez6">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIk-QT-r3t" userLabel="Patient Name">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="B1g-O6-LKf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS0-7Q-JnP">
+                                                <rect key="frame" x="110" y="0.0" width="245" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCw-g8-Ou4">
+                                        <rect key="frame" x="0.0" y="40.5" width="355" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GL-eB-HIn">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lja-vW-gi8">
+                                                <rect key="frame" x="42" y="0.0" width="313" height="30"/>
+                                                <state key="normal" title="Select medicine"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-cP-xaL">
+                                        <rect key="frame" x="0.0" y="90.5" width="355" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="507736233.96226603">
+                                            <!--2017-02-02 13:50:33 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aoQ-po-pAD">
+                                        <rect key="frame" x="0.0" y="326.5" width="355" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14A-DU-nGs">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m1w-SV-qKy">
+                                                <rect key="frame" x="78.5" y="0.0" width="276.5" height="29"/>
+                                                <segments>
+                                                    <segment title="ml"/>
+                                                    <segment title="pills"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jmp-PF-FNg">
+                                        <rect key="frame" x="0.0" y="374.5" width="355" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIR-Ha-fe2">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JAs-ML-Mk1">
+                                                <rect key="frame" x="75" y="0.0" width="280" height="29"/>
+                                                <segments>
+                                                    <segment title="High"/>
+                                                    <segment title="Medium"/>
+                                                    <segment title="Low"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DzG-54-QUf" secondAttribute="trailing" constant="10" id="F6p-0F-OXV"/>
+                            <constraint firstItem="DzG-54-QUf" firstAttribute="leading" secondItem="j6f-fF-QhE" secondAttribute="leading" constant="10" id="kZW-6G-hLG"/>
+                            <constraint firstItem="DzG-54-QUf" firstAttribute="top" secondItem="38h-Kb-1PY" secondAttribute="bottom" constant="20" id="tie-51-Kla"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j12-fq-tzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="127.28635682158921"/>
+        </scene>
+        <!--Schedule Details View Controller-->
+        <scene sceneID="AHe-50-Adc">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleDetailsViewController" id="CIZ-df-7Hf" customClass="ScheduleDetailsViewController" customModule="NurseHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K3m-9H-APF"/>
+                        <viewControllerLayoutGuide type="bottom" id="r7T-lL-IVG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jU-BP-QIo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a1w-Lu-Baj">
+                                <rect key="frame" x="10" y="40" width="355" height="402.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rq6-ys-kWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj0-ni-yaD" userLabel="Patient Name">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="blO-ED-tUo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW4-5d-PJI">
+                                                <rect key="frame" x="110" y="0.0" width="245" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4N-4x-DO5">
+                                        <rect key="frame" x="0.0" y="40.5" width="355" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEP-oN-ZVe">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y1-oS-tAe">
+                                                <rect key="frame" x="42" y="0.0" width="313" height="30"/>
+                                                <state key="normal" title="Select medicine"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <datePicker userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kn6-Vn-NgW">
+                                        <rect key="frame" x="0.0" y="90.5" width="355" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="507736233.96226603">
+                                            <!--2017-02-02 13:50:33 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yHj-Rc-625">
+                                        <rect key="frame" x="0.0" y="326.5" width="355" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-uo-FJo">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Liu-Ol-H6E">
+                                                <rect key="frame" x="78.5" y="0.0" width="276.5" height="29"/>
+                                                <segments>
+                                                    <segment title="ml"/>
+                                                    <segment title="pills"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cvK-NO-6Za">
+                                        <rect key="frame" x="0.0" y="374.5" width="355" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBz-GQ-ciW">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LeM-jS-0b3">
+                                                <rect key="frame" x="75" y="0.0" width="280" height="29"/>
+                                                <segments>
+                                                    <segment title="High"/>
+                                                    <segment title="Medium"/>
+                                                    <segment title="Low"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a1w-Lu-Baj" firstAttribute="leading" secondItem="0jU-BP-QIo" secondAttribute="leading" constant="10" id="6xK-3V-tXX"/>
+                            <constraint firstItem="a1w-Lu-Baj" firstAttribute="top" secondItem="K3m-9H-APF" secondAttribute="bottom" constant="20" id="Zd2-J7-Gug"/>
+                            <constraint firstAttribute="trailing" secondItem="a1w-Lu-Baj" secondAttribute="trailing" constant="10" id="cSf-TA-LMQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfo-Fa-1tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="797"/>
+        </scene>
+        <!--Schedule Select Patient View Controller-->
+        <scene sceneID="lt8-fg-dFv">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleSelectPatientViewController" id="2Sk-lv-gwF" customClass="ScheduleSelectPatientViewController" customModule="NurseHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H2S-Ks-asu"/>
+                        <viewControllerLayoutGuide type="bottom" id="76f-VU-tIh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qX-3i-ZNU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpu-bt-Wuh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="F5N-eK-DAr" kind="embed" id="MFI-lp-dOB"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="76f-VU-tIh" firstAttribute="top" secondItem="Fpu-bt-Wuh" secondAttribute="bottom" id="04G-aV-41h"/>
+                            <constraint firstAttribute="trailing" secondItem="Fpu-bt-Wuh" secondAttribute="trailing" id="efq-t0-VIb"/>
+                            <constraint firstItem="Fpu-bt-Wuh" firstAttribute="leading" secondItem="3qX-3i-ZNU" secondAttribute="leading" id="vVq-QE-zEU"/>
+                            <constraint firstItem="Fpu-bt-Wuh" firstAttribute="top" secondItem="H2S-Ks-asu" secondAttribute="bottom" id="yDw-nc-4jC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTt-Tl-5EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="1459"/>
+        </scene>
+        <!--PatientsListViewController-->
+        <scene sceneID="cwd-lg-hxE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Patients" referencedIdentifier="PatientsListViewController" id="F5N-eK-DAr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAG-8i-Jmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="1344"/>
+        </scene>
+    </scenes>
+</document>
